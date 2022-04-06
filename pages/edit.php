@@ -138,7 +138,7 @@ if(isset($_REQUEST['btn_update']))
 						
 				<div class="form-group">
 				<div class="col-sm-offset-3 col-sm-9 m-t-15">
-				<input type="submit" name="btn_update" class="btn btn-primary" value="Update">
+				<input type="submit" name="btn_update" class="btn btn-primary" value="Mettre à jour">
 				<a href="liste_article.php" class="btn btn-danger">Supprimer</a>
 				</div>
 				</div>

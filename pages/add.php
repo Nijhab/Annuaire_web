@@ -108,8 +108,8 @@ if(isset($_REQUEST['btn_insert']))
 				</div>
 				
 				<div class="col-sm-offset-3 col-sm-9 m-t-15">
-				<input type="submit"  name="btn_insert" class="btn btn-danger " value="Insert">
-				<a href="liste_article" class="btn btn-dark">Cancel</a>
+				<input type="submit"  name="btn_insert" class="btn btn-danger " value="Insérer">
+				<a href="liste_article.php" class="btn btn-dark">Supprimer</a>
 				</div>
 					
 			</form>
