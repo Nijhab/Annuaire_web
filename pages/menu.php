@@ -1,5 +1,5 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid"  style="background-color: rgb(180, 8, 8);">
+        <div class="container-fluid"  style="background-color: rgb(74, 15, 236);">
           <a class="navbar-brand" href="#">
             <img src="image/logo-simplon.jpg" style="height: 10vh;" alt="">
           </a>
@@ -22,7 +22,7 @@
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder=" " aria-label="Search">
-              <button class="btn btn-outline-danger" style="background-color: rgb(238, 232, 232);" type="submit">Search</button>
+              <button class="btn btn-outline-primary" style="background-color: rgb(74, 15, 236);" type="submit">Search</button>
             </form>
           </div>
         </div>
