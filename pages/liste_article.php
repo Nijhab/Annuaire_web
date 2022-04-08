@@ -46,9 +46,6 @@ if(isset($_REQUEST['delete_id']))
                             </a></h3>
                         </div>
                         <!-- /.panel-heading -->
-                        <form class="d-flex m-3 col-md-4">
-                            <input class="form-control me-2" id="myInput" onkeyup="myFunction()" type="search" placeholder=" " aria-label="Search"> 
-                        </form>
                         <div class="panel-body imprimable">
                             <div class="table-responsive">
                                 <table id="myTable" class="table table-striped table-bordered table-hover">

@@ -20,7 +20,10 @@
                 </a>
               </li>
             </ul>
-            <h2 class="text-light">ANNUAIRE DES ARTICLES</h2>
+            <form class="d-flex">
+              <input class="form-control me-2" id="myInput" onkeyup="myFunction()" type="search" aria-label="Search">
+              <button class="btn btn-outline-light" style="background-color: rgb(74, 15, 236);" type="submit">Recherche</button>
+            </form>
           </div>
         </div>
       </nav> <br>
