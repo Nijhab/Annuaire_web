@@ -16,5 +16,6 @@
       </div> <br>
       <?php include 'pages/pied.php';?>
       <?php include 'pages/script.php';?>
+      
 </body>
 </html>
