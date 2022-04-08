@@ -42,15 +42,18 @@ if(isset($_REQUEST['delete_id']))
 			<div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                           <h3><a href="add.php"><span class="glyphicon glyphicon-plus"></span> Ajouter un article</a></h3>
+                           <h3><a href="add.php"><span class="glyphicon glyphicon-plus"></span> <button type="button" class="btn btn-outline-primary">Ajouter un article</button>
+                            </a></h3>
                         </div>
                         <!-- /.panel-heading -->
+                        <form class="d-flex m-3 col-md-4">
+                            <input class="form-control me-2" id="myInput" onkeyup="myFunction()" type="search" placeholder=" " aria-label="Search"> 
+                        </form>
                         <div class="panel-body imprimable">
                             <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover">
+                                <table id="myTable" class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr>
-                                            <th>Code</th>
                                             <th>LIBELLE</th>
 											<th>QUANTITE</th>
                                             <th>PRIX UNITAIRE</th>
@@ -67,13 +70,12 @@ if(isset($_REQUEST['delete_id']))
 									{
 									?>
                                         <tr>
-                                            <td><?php echo $row['code']; ?></td>
                                             <td><?php echo $row['libelle']; ?></td>
 											<td><?php echo $row['quantite']; ?></td>
                                             <td><?php echo $row['prixUnitaire']; ?></td>
                                             <td><?php echo $row['provenance']; ?></td>
-                                            <td><a href="edit.php?update_id=<?php echo $row['code']; ?>" class="btn btn-warning">Modifier</a></td>
-                                            <td><a href="?delete_id=<?php echo $row['code']; ?>" class="btn btn-danger">Supprimer</a></td>
+                                            <td><a href="edit.php?update_id=<?php echo $row['code']; ?>" class="btn "> <img src="../image/edit2.jpg"  alt=""> </a></td>
+                                            <td><a href="?delete_id=<?php echo $row['code']; ?>" class="btn "> <img src="../image/Delete2.jpg"  alt=""> </a></td>
                                         </tr>
                                     <?php
 									}
@@ -102,6 +104,29 @@ if(isset($_REQUEST['delete_id']))
     </div>
     <br>
       <?php include 'pied.php';?>
-      <?php include 'script.php';?>								
+      <?php include 'script.php';?>	
+      
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+
 	</body>
 </html>

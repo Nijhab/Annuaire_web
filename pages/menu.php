@@ -20,10 +20,7 @@
                 </a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder=" " aria-label="Search">
-              <button class="btn btn-outline-primary" style="background-color: rgb(74, 15, 236);" type="submit">Search</button>
-            </form>
+            <h2 class="text-light">ANNUAIRE DES ARTICLES</h2>
           </div>
         </div>
-      </nav> <br>
+      </nav>
