@@ -122,7 +122,7 @@ Insérer
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Voulez vous vraiment inserez une donnée?
+        Voulez-vous vraiment inserez un article?
       </div>
       <div class="modal-footer">
 	   <button  class="btn btn-success" type="submit"  name="btn_insert" class="btn btn-danger " value="Insérer" >Valider</button>

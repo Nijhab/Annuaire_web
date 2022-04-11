@@ -71,7 +71,7 @@ if(isset($_REQUEST['delete_id']))
 											<td><?php echo $row['quantite']; ?></td>
                                             <td><?php echo $row['prixUnitaire']; ?></td>
                                             <td><?php echo $row['provenance']; ?></td>
-                                            <td><a href="edit.php?update_id=<?php echo $row['code']; ?>" class="btn "> <img src="../image/edit2.jpg"  alt=""> </a></td>
+                                            <td><a href="edit.php?update_id=<?php echo $row['code']; ?>" class="btn "> <img src="../image/edit4.jpg"  alt=""> </a></td>
                                             <td><a href="?delete_id=<?php echo $row['code']; ?>" class="btn " onclick='return confirm("Etes-vous sûr de vouloir supprimer?")'>  <img src="../image/Delete2.jpg"  alt=""> </a></td>
                                         </tr>
                                     <?php

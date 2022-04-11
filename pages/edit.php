@@ -105,32 +105,32 @@ if(isset($_REQUEST['btn_update']))
         <?php
 		}
 		?>   
-			<h2>Modifier</h2>
-				<form method="post" class="form-horizontal">
+			<center><h2>Modifier</h2></center>
+			<center><form method="post" class="form-horizontal">
 					
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label">LIBELLE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;" >LIBELLE</label>
 				<div class="col-sm-6">
 				<input type="text" name="libelle" class="form-control" value="<?php echo $libelle; ?>">
 				</div>
 				</div>
 					
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label">QUANTITE</label>
+				<div class="form-group mb-3" >
+				<label class="col-sm-3 control-label" style=" text-align: left;">QUANTITE</label>
 				<div class="col-sm-6">
 				<input type="text" name="quantite" class="form-control" value="<?php echo $quantite; ?>">
 				</div>
 				</div>
 
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label">PRIX UNITAIRE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;">PRIX UNITAIRE</label>
 				<div class="col-sm-6">
 				<input type="text" name="prixUnitaire" class="form-control" value="<?php echo $prixUnitaire; ?>">
 				</div>
 				</div>
 
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label">PROVENANCE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;">PROVENANCE</label>
 				<div class="col-sm-6">
 				<input type="text" name="provenance" class="form-control" value="<?php echo $provenance; ?>">
 				</div>

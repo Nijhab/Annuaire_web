@@ -1,25 +1,5 @@
 <?php
-
 require_once "connection.php";
-	
-if(isset($_REQUEST['delete_id']))
-{
-	// selectionner la donnée de la base de donnée à supprimer 
-	$code=$_REQUEST['delete_id'];	//obtenir delete_id et le deposer dans $id variable
-		
-	$select_stmt= $db->prepare('SELECT * FROM Article WHERE code =:code');
-	$select_stmt->bindParam(':code',$code);
-	$select_stmt->execute();
-	$row=$select_stmt->fetch(PDO::FETCH_ASSOC);
-		
-	//supprimer une donnée de la base de donnée 
-	$delete_stmt = $db->prepare('DELETE FROM Article WHERE code =:code');
-	$delete_stmt->bindParam(':code',$code);
-	$delete_stmt->execute();
-		
-	header("Location:liste_article.php");
-}
-	
 ?>
 
 <!DOCTYPE html>
