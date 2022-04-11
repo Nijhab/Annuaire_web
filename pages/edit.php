@@ -135,14 +135,35 @@ if(isset($_REQUEST['btn_update']))
 				<input type="text" name="provenance" class="form-control" value="<?php echo $provenance; ?>">
 				</div>
 				</div>
-						
+
 				<div class="form-group">
 				<div class="col-sm-offset-3 col-sm-9 m-t-15">
-				<input type="submit" name="btn_update" class="btn btn-primary" value="Mettre à jour" onclick='return confirm("Etes-vous sûr de vouloir modifier?")' >
-				<a href="liste_article.php" class="btn btn-danger">Supprimer</a>
-				</div>
-				</div>
-					
+					<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Mettre à jour
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+    
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Voulez vous vraiment modifier cette donnée?
+      </div>
+      <div class="modal-footer">
+	   <button  class="btn btn-success" type="submit"  name="btn_update" class="btn btn-danger " >Valider</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button> 
+      </div>
+    </div>
+  </div>
+</div>
+		<a href="liste_article.php" class="btn btn-danger">Supprimer</a>
+		</div>
+		</div>
 			</form>
 			
 		</div>

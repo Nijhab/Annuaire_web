@@ -108,10 +108,31 @@ if(isset($_REQUEST['btn_insert']))
 				</div>
 				
 				<div class="col-sm-offset-3 col-sm-9 m-t-15">
-				<input type="submit"  name="btn_insert" class="btn btn-danger " value="Insérer" onclick='return confirm("Etes-vous sûr de vouloir insérer?")'>
-				<a href="liste_article.php" class="btn btn-dark">Supprimer</a>
-				</div>
-					
+					<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Insérer
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+    
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Voulez vous vraiment inserez une donnée?
+      </div>
+      <div class="modal-footer">
+	   <button  class="btn btn-success" type="submit"  name="btn_insert" class="btn btn-danger " value="Insérer" >Valider</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button> 
+      </div>
+    </div>
+  </div>
+</div>
+		<a href="liste_article.php" class="btn btn-dark">Supprimer</a>
+		</div>
 			</form>
 			
 		</div>
